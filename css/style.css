@@ -1,0 +1,419 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+body {
+  font-family: Montserrat;
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.header {
+  padding: 25px 0;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+}
+.logo {
+}
+.logo__text {
+  font-family: "Magra";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 121%;
+  color: #ffffff;
+}
+.header__nav {
+}
+.nav__items {
+  display: flex;
+}
+.nav__item {
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.nav__items > *:not(:first-child) {
+  margin: 0px 0px 0px 42px;
+}
+.header__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+  padding: 10px 30px 10px 30px;
+  background: #0d606f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+}
+/* ---blocks */
+.main {
+  flex: 1 1 auto;
+}
+
+.preview {
+  position: relative;
+  background: url("/img/heroscreen/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 765px;
+  width: 100%;
+}
+.preview__content {
+  padding: 100px 0px 0px 0px;
+}
+.preview__title {
+  font-family: "Aleo";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 900px;
+}
+.preview__text {
+  font-family: "Aleo";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 144%;
+  color: #ffffff;
+  margin: 46px 0px 46px 0px;
+}
+.input {
+  position: relative;
+  display: inline-block;
+}
+.preview__input {
+  width: 900px;
+  height: 92px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+::placeholder {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 145%;
+  color: #f2785c;
+  padding: 0px 0px 0px 40px;
+}
+.preview__button {
+  position: absolute;
+  top: 18%;
+  right: 18px;
+}
+.button {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #ffffff;
+  padding: 13px 32px 13px 32px;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+}
+.btn {
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #ffffff;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  padding: 10px 31px 10px 31px;
+}
+.steps {
+}
+.steps__content {
+  margin: 80px 0px 97px 0px;
+}
+.steps__title {
+  margin: 0px 0px 40px 0px;
+}
+.title {
+  font-family: "Red Hat Text";
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 132%;
+  color: #f2785c;
+}
+.steps__row {
+  display: flex;
+  justify-content: space-around;
+}
+.step__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.step__logo {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  flex: 1 1 auto;
+}
+.logo__cycling {
+  padding: 28px 25px 28px 25px;
+  background: #f2785c;
+  border-radius: 16px;
+}
+.step__description {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #0d606f;
+}
+
+.destination {
+  margin: 0px 0px 80px 0px;
+}
+.container__slider {
+  width: 100%;
+  text-align: center;
+}
+.destination__title {
+  margin: 0px 0px 46px 0px;
+}
+.destination__content {
+}
+.destination__row {
+  display: flex;
+  justify-content: center;
+}
+.destination__row > *:not(:first-child) {
+  margin: 0px 0px 0px 60px;
+}
+.destination__img {
+}
+.destination__image {
+  border-radius: 16px;
+}
+.destination__button {
+  margin: 90px 0px 0px 0px;
+}
+
+.stories {
+}
+.stories__title {
+  margin: 0px 0px 80px 0px;
+}
+.stories__column {
+  background: url("../img/stories/bg2.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 40px;
+  padding-bottom: 61px;
+}
+.stories__bg {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px 0px 0px 0px;
+  text-align: center;
+}
+.stories__row {
+  display: flex;
+  margin: 30px 0px 0px 0px;
+}
+.stories__img {
+  flex: 0 1 35%;
+}
+.stories__image {
+  filter: drop-shadow(0px 4px 4px #0d606f);
+  border-radius: 16px;
+}
+.stories__descriprion {
+  font-family: "Aleo";
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+}
+.description__title {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 120%;
+  color: #0d606f;
+  flex: 1 1 auto;
+}
+.description__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #0d606f;
+  text-align: left;
+}
+.description__link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration-line: underline;
+  color: #0d606f;
+  text-align: left;
+}
+.stories__button {
+  margin: 50px 0px 40px 0px;
+  text-align: center;
+}
+.btn__text:before {
+  content: "";
+  background: url("../img/Vector.svg") 0 0 no-repeat;
+  width: 36px;
+  height: 22.5px;
+  display: inline-block;
+  margin: 0px 12px 0px 0px;
+}
+
+.footer {
+  margin: -61px 0px 0px 0px;
+  height: 61px;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+  margin: 0.7% 0px 0px 0px;
+}
+.footer__left {
+  display: flex;
+  filter: invert(1);
+  flex: 1 1 auto;
+}
+.rsschool {
+}
+.rsschool__logo {
+  width: 70px;
+  height: 40px;
+}
+.github {
+}
+.footer__center {
+  flex: 1 1 auto;
+}
+.footer__text {
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.footer__right {
+}
+.right__social {
+  display: flex;
+  align-items: center;
+}
+.right__social > *:not(:last-child) {
+  margin: 0px 0px 0px 22px;
+}
+.right__inst {
+}
+.instagram {
+}
+.right__youtube {
+}
+.youtube {
+}
+.right__twitter {
+}
+.twitter {
+}
