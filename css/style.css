@@ -154,7 +154,7 @@ body {
   position: relative;
   background: url("../img/heroscreen/hero-bg.jpg") no-repeat center;
   background-size: cover;
-  height: 765px;
+  min-height: 100vh;
   width: 100%;
 }
 .preview__content {
