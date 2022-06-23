@@ -188,6 +188,13 @@ body {
   height: 92px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 145%;
+  color: #f2785c;
+  padding: 0px 0px 0px 40px;
 }
 ::placeholder {
   font-family: "Aleo";
